@@ -1,9 +1,6 @@
 # C++ build artifacts
 *.exe
-*.out
-
-# Expected test outputs required by the 4.1a local runner
-!4.1a-Graphs-Set1-Templates/tests/**/*.out
+a.out
 *.o
 *.obj
 *.a
