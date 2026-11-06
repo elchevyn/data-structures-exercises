@@ -4,6 +4,7 @@
 using namespace std;
 
 // Implement a directed graph with vertices 1..n.
+// addEdge(u, v) adds only the arc u -> v; it does NOT add v -> u.
 class ListGraph {
     // Add the data members you need here.
 public:

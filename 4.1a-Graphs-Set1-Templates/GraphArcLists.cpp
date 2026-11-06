@@ -3,6 +3,8 @@
 #include <vector>
 using namespace std;
 
+// Directed graph: addEdge(u, v) adds only the arc u -> v.
+// It does NOT add v -> u.
 class ArcListGraph {
     // Define Vertex/Arc and store them.
 public:

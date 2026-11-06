@@ -4,6 +4,8 @@
 #include <vector>
 using namespace std;
 
+// Directed graph: addEdge(u, v) adds only the arc u -> v.
+// It does NOT add v -> u.
 class EdgeListGraph {
     // Add the data members you need.
 public:
