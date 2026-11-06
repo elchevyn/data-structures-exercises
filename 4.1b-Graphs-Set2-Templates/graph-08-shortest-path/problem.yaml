@@ -1,0 +1,17 @@
+title: "Shortest Path in an Unweighted Graph"
+mode: function
+points: 100
+time_limit_s: 2
+signature: "int shortestPath(const ListGraph &g, int n, int s, int t);"
+tags:
+- graphs
+- bfs
+- shortest-path
+- traversal
+cases:
+  "01": { name: "Two paths of different length" }
+  "02": { name: "Arcs point the other way" }
+  "03": { name: "Same vertex" }
+  "h01": { name: "First path found is long" }
+  "h02": { name: "Unreachable target in a cycle" }
+  "h03": { name: "Large layered graph" }

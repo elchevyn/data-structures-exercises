@@ -1,0 +1,33 @@
+# C++ build artifacts
+*.exe
+*.out
+*.o
+*.obj
+*.a
+*.lib
+*.dll
+*.so
+*.dylib
+
+# Debug/test executables created by the provided runners
+prog
+prog.exe
+debug.exe
+__local_test
+__local_test.exe
+g_matrix
+g_matrix.exe
+g_list
+g_list.exe
+g_edge
+g_edge.exe
+g_arc
+g_arc.exe
+
+# Test output created by local runners
+*.got
+
+# IDE / OS files
+.vscode/ipch/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,17 @@
+title: "Find the Town Judge"
+mode: function
+points: 100
+time_limit_s: 1
+signature: "int findJudge(const ListGraph &g, int n);"
+tags:
+- graphs
+- degree
+- in-degree
+- out-degree
+cases:
+  "01": { name: "Everybody trusts 3" }
+  "02": { name: "The candidate trusts someone" }
+  "03": { name: "Two people" }
+  "h01": { name: "Only one person" }
+  "h02": { name: "Trusted by all, but trusts someone" }
+  "h03": { name: "Large town with a judge" }

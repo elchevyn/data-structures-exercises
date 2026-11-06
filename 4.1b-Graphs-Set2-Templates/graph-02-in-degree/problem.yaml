@@ -1,0 +1,17 @@
+title: "In-Degree of Every Vertex"
+mode: function
+points: 100
+time_limit_s: 1
+signature: "vector<int> inDegrees(const ListGraph &g, int n);"
+tags:
+- graphs
+- adjacency-list
+- degree
+- in-degree
+cases:
+  "01": { name: "Small graph" }
+  "02": { name: "No arcs" }
+  "03": { name: "One cycle" }
+  "h01": { name: "Arcs only leave vertex 1" }
+  "h02": { name: "Arcs into the last vertex" }
+  "h03": { name: "50000 vertices, 80000 arcs" }

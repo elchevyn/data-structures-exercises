@@ -1,0 +1,16 @@
+title: "Topological Sort (Kahn's Algorithm)"
+mode: function
+points: 120
+time_limit_s: 1
+signature: "vector<int> topologicalSort(const ListGraph &g, int n);"
+tags:
+- graphs
+- dag
+- kahn
+- topological-sort
+- traversal
+cases:
+  "01": { name: "Simple DAG" }
+  "02": { name: "Multiple valid orders" }
+  "03": { name: "Cycle" }
+  "h01": { name: "Bigger DAG" }

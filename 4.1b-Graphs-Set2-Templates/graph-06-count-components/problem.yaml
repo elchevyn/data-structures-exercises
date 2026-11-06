@@ -1,0 +1,18 @@
+title: "Number of Connected Components"
+mode: function
+points: 100
+time_limit_s: 2
+signature: "int countComponents(const ListGraph &g, int n);"
+tags:
+- graphs
+- bfs
+- components
+- dfs
+- traversal
+cases:
+  "01": { name: "Two components" }
+  "02": { name: "No edges" }
+  "03": { name: "One cycle" }
+  "h01": { name: "Cycles and the last vertex connected" }
+  "h02": { name: "Single vertex" }
+  "h03": { name: "Large graph with many components" }

@@ -1,0 +1,14 @@
+title: "DFS Traversal Order"
+mode: function
+points: 100
+time_limit_s: 1
+signature: "vector<int> dfsOrder(const ListGraph &g, int n, int s);"
+tags:
+- graphs
+- dfs
+- traversal
+cases:
+  "01": { name: "Single component" }
+  "02": { name: "Unreachable vertices" }
+  "03": { name: "Directed graph" }
+  "h01": { name: "Bigger" }

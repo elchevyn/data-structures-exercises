@@ -1,0 +1,19 @@
+title: "Number of Islands"
+mode: function
+points: 100
+time_limit_s: 2
+signature: "int numIslands(vector<string> grid);"
+tags:
+- graphs
+- bfs
+- components
+- dfs
+- grid
+- traversal
+cases:
+  "01": { name: "One island" }
+  "02": { name: "Three islands" }
+  "03": { name: "Only water" }
+  "h01": { name: "Diagonal cells are separate" }
+  "h02": { name: "Land on the last row and column" }
+  "h03": { name: "Large random map" }

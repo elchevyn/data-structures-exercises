@@ -1,0 +1,18 @@
+title: "Adjacency Matrix: Who Points to Me?"
+mode: function
+points: 100
+time_limit_s: 2
+signature: "vector<int> MatrixGraph::inNeighbors(int v) const;"
+tags:
+- graphs
+- adjacency-matrix
+- in-degree
+- in-neighbors
+- representation
+cases:
+  "01": { name: "Three vertices point to 3" }
+  "02": { name: "One vertex points to 1" }
+  "03": { name: "Nobody points to 4" }
+  "h01": { name: "Vertex 1 points to v" }
+  "h02": { name: "The last vertex points to v" }
+  "h03": { name: "1000 vertices, 20000 arcs" }

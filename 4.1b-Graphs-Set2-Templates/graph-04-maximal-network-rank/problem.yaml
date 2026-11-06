@@ -1,0 +1,16 @@
+title: "Maximal Network Rank"
+mode: function
+points: 100
+time_limit_s: 2
+signature: "int maximalNetworkRank(const MatrixGraph &g, int n);"
+tags:
+- graphs
+- degree
+- undirected
+cases:
+  "01": { name: "Linked pair counts the road once" }
+  "02": { name: "Five cities" }
+  "03": { name: "No roads" }
+  "h01": { name: "Best pair is not the two largest degrees" }
+  "h02": { name: "Two cities, one road" }
+  "h03": { name: "100 cities, 1500 roads" }

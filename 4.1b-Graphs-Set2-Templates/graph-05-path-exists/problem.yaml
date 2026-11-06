@@ -1,0 +1,18 @@
+title: "Find if a Path Exists"
+mode: function
+points: 100
+time_limit_s: 2
+signature: "bool hasPath(const ListGraph &g, int n, int s, int t);"
+tags:
+- graphs
+- bfs
+- connectivity
+- dfs
+- traversal
+cases:
+  "01": { name: "Path through two edges" }
+  "02": { name: "Different components" }
+  "03": { name: "Same vertex" }
+  "h01": { name: "Graph with cycles, no path" }
+  "h02": { name: "Long chain of 10000 vertices" }
+  "h03": { name: "Two large components" }

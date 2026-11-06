@@ -1,0 +1,19 @@
+title: BFS Distances
+mode: function
+points: 100
+time_limit_s: 1
+signature: vector<int> bfsDistances(const ListGraph &g, int n, int s);
+tags:
+- bfs
+- graphs
+- distances
+- traversal
+cases:
+  '01':
+    name: Single component
+  '02':
+    name: Unreachable vertices
+  '03':
+    name: Directed graph
+  h01:
+    name: Bigger
