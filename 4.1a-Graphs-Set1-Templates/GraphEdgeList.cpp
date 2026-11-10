@@ -6,19 +6,28 @@ using namespace std;
 
 // Directed graph: addEdge(u, v) adds only the arc u -> v.
 // It does NOT add v -> u.
+struct Edge { int from, to; };
 class EdgeListGraph {
     // Add the data members you need.
+    vector<Edge> edges; // only store the edges, no adjacency list
 public:
     explicit EdgeListGraph(int n) {
         // your code here
+        
     }
 
     void addEdge(int u, int v) {
         // your code here
+        edges.push_back({u, v});
     }
 
     bool hasEdge(int u, int v) const {
         // your code here
+        for (const Edge& e : edges) {
+            if (e.from == u && e.to == v){
+                return true;   
+            }
+        }
         return false;
     }
 

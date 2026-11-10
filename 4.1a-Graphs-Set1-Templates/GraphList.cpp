@@ -7,25 +7,32 @@ using namespace std;
 // addEdge(u, v) adds only the arc u -> v; it does NOT add v -> u.
 class ListGraph {
     // Add the data members you need here.
+    vector<vector<int>> adjList; // adjacency list representation
 public:
-    explicit ListGraph(int n) {
+    explicit ListGraph(int n) : adjList(n + 1) {
         // your code here
+
     }
 
     // Adds the directed arc u -> v.
     void addEdge(int u, int v) {
         // your code here
+        adjList[u].push_back(v);
     }
 
     bool hasEdge(int u, int v) const {
         // your code here
+        for (int neighbor : adjList[u]) {
+            if (neighbor == v) {
+                return true;
+            }
+        }
         return false;
     }
 
     const vector<int>& neighbors(int u) const {
         // your code here
-        static const vector<int> empty;
-        return empty;
+        return adjList[u];
     }
 };
 

@@ -5,25 +5,40 @@ using namespace std;
 
 // Directed graph: addEdge(u, v) adds only the arc u -> v.
 // It does NOT add v -> u.
-class MatrixGraph {
+class MatrixGraph {  
     // Add the data members you need.
+    int n;  // 1 ... n vertices 
+    vector<vector<bool>> adjMatrix; // adj[u][v]: is there an edge u -> v?
 public:
     explicit MatrixGraph(int n) {
         // your code here
+        adjMatrix.assign(n, vector<bool>(n, false)); // Initialize the adjacency matrix with false values
     }
 
     void addEdge(int u, int v) {
         // your code here
+        adjMatrix[u][v] = true;
     }
+    
 
     bool hasEdge(int u, int v) const {
         // your code here
-        return false;
+        if (adjMatrix[u][v]) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     vector<int> neighbors(int u) const {
-        // your code here
-        return {};
+        // your code 
+        vector<int> result;
+        for (int v = 0; v < n; v++) {
+            if (adjMatrix[u][v]) {
+                result.push_back(v);
+            }
+        }
+        return result;
     }
 };
 
